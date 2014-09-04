@@ -1,0 +1,8 @@
+@@ Parameterized
+    |device |size    |tags|
+    |desktop|1024x768|all,desktop|
+
+
+Home page in ${device} device
+    http://www.thoughtworks.com ${size}
+        check homepage.spec --include "${tags}"
