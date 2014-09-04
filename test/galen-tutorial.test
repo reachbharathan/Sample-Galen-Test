@@ -1,9 +1,0 @@
-@@ Parameterized
-    |device |size    |tags      |
-    |desktop|1600x800|all,desktop|
-    |tablet |768x1024|all,tablet|
-    |mobile|320x568  |all,mobile|
-
-Home page in ${device} device
-    http://www.thoughtworks.com ${size}
-        check spec/homePage.spec --include "${tags}"
