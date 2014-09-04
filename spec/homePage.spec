@@ -5,7 +5,7 @@ twLogo   css   a[title="ThoughtWorks"]
 
 =============================
 
-@all
+@ all
 ----------------
 cookieBanner
     inside: screen 0px top
@@ -15,3 +15,12 @@ header
     inside: screen 41px top
     width: 100 % of screen/width
 
+@ desktop,tablet
+--------------
+twLogo
+    below: header
+
+@ mobile
+--------------
+twLogo
+    inside: header 0px top
