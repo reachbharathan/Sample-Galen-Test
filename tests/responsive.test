@@ -1,0 +1,9 @@
+@@ Parameterized
+    |device |size     |tags|
+    |desktop|1600x800 |all,desktop|
+    |tablet |768x1024 |all,tablet|
+    |mobile |350x568  |all,mobile|
+
+Homepage in ${device} device
+   http://localhost:4000 ${size}
+        check spec/responsive.spec --include "${tags}"
