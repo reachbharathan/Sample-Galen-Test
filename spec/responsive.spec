@@ -14,7 +14,6 @@ contents-*			css .medium-4.columns
 
 =====================================
 
-
 @all
 ---------------------------
 header
@@ -23,6 +22,9 @@ header
 
 backstretch
   width: 100 % of screen/width  
+
+contents-*
+  component: contents.spec  
 
 
 @desktop
