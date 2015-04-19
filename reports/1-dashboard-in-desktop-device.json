@@ -1,0 +1,28 @@
+{
+  "testId" : "1-dashboard-in-desktop-device",
+  "name" : "Dashboard in desktop device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://localhost:4000 1600x800",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "        check spec/responsive.spec --include \"all,desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: spec/responsive.spec included tags: all,desktop",
+          "status" : "info",
+          "time" : 1429447077213,
+          "includedTags" : [ "all", "desktop" ],
+          "sections" : [ ],
+          "objects" : { },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1429447073600,
+        "type" : "node"
+      } ],
+      "time" : 1429447058866,
+      "type" : "node"
+    } ]
+  }
+}

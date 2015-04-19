@@ -1,0 +1,658 @@
+<html>
+    <head>
+        <title>Galen Reports</title>
+        <link rel="stylesheet" type="text/css" href="report.css"></link>
+        <script src="jquery-1.11.2.min.js"></script>
+        <script src="handlebars-v2.0.0.js"></script>
+        <script src="galen-report.js"></script>
+        <script>
+var reportData = {
+  "testId" : "1-homepage-in-desktop-device",
+  "name" : "Homepage in desktop device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://localhost:4000 1600x800",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "        check spec/responsive.spec --include \"all,desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: spec/responsive.spec included tags: all,desktop",
+          "status" : "info",
+          "time" : 1429461038126,
+          "includedTags" : [ "all", "desktop" ],
+          "sections" : [ {
+            "name" : "all",
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 20
+                },
+                "name" : "inside: screen 0px top",
+                "highlight" : [ "header", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 21
+                },
+                "name" : "width: 100 % of screen/width",
+                "highlight" : [ "header" ]
+              } ]
+            }, {
+              "name" : "backstretch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 24
+                },
+                "name" : "width: 100 % of screen/width",
+                "highlight" : [ "backstretch" ]
+              } ]
+            }, {
+              "name" : "contents-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 27
+                },
+                "name" : "component: contents.spec",
+                "highlight" : [ "contents-1" ],
+                "subLayout" : {
+                  "includedTags" : [ ],
+                  "excludedTags" : [ ],
+                  "sections" : [ {
+                    "name" : "all",
+                    "objects" : [ {
+                      "name" : "content-header",
+                      "specs" : [ {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 12
+                        },
+                        "name" : "below: content-image",
+                        "highlight" : [ "content-header", "content-image" ]
+                      }, {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 13
+                        },
+                        "name" : "above: content-desc",
+                        "highlight" : [ "content-header", "content-desc" ]
+                      } ]
+                    }, {
+                      "name" : "content-desc",
+                      "specs" : [ {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 16
+                        },
+                        "name" : "below: content-header",
+                        "highlight" : [ "content-desc", "content-header" ]
+                      }, {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 17
+                        },
+                        "name" : "above: content-more-button",
+                        "highlight" : [ "content-desc", "content-more-button" ]
+                      } ]
+                    }, {
+                      "name" : "content-more-button",
+                      "specs" : [ {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 20
+                        },
+                        "name" : "below: content-header",
+                        "highlight" : [ "content-more-button", "content-header" ]
+                      }, {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 21
+                        },
+                        "name" : "aligned vertically left:content-desc",
+                        "highlight" : [ "content-more-button", "content-desc" ]
+                      } ]
+                    } ]
+                  } ],
+                  "objects" : {
+                    "content-more-button" : {
+                      "area" : [ 155, 821, 78, 35 ]
+                    },
+                    "content-desc" : {
+                      "area" : [ 155, 647, 303, 154 ]
+                    },
+                    "content-image" : {
+                      "area" : [ 155, 420, 302, 182 ]
+                    },
+                    "content-header" : {
+                      "area" : [ 155, 612, 303, 35 ]
+                    }
+                  }
+                }
+              } ]
+            }, {
+              "name" : "contents-2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 27
+                },
+                "name" : "component: contents.spec",
+                "highlight" : [ "contents-2" ],
+                "subLayout" : {
+                  "includedTags" : [ ],
+                  "excludedTags" : [ ],
+                  "sections" : [ {
+                    "name" : "all",
+                    "objects" : [ {
+                      "name" : "content-header",
+                      "specs" : [ {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 12
+                        },
+                        "name" : "below: content-image",
+                        "highlight" : [ "content-header", "content-image" ]
+                      }, {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 13
+                        },
+                        "name" : "above: content-desc",
+                        "highlight" : [ "content-header", "content-desc" ]
+                      } ]
+                    }, {
+                      "name" : "content-desc",
+                      "specs" : [ {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 16
+                        },
+                        "name" : "below: content-header",
+                        "highlight" : [ "content-desc", "content-header" ]
+                      }, {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 17
+                        },
+                        "name" : "above: content-more-button",
+                        "highlight" : [ "content-desc", "content-more-button" ]
+                      } ]
+                    }, {
+                      "name" : "content-more-button",
+                      "specs" : [ {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 20
+                        },
+                        "name" : "below: content-header",
+                        "highlight" : [ "content-more-button", "content-header" ]
+                      }, {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 21
+                        },
+                        "name" : "aligned vertically left:content-desc",
+                        "highlight" : [ "content-more-button", "content-desc" ]
+                      } ]
+                    } ]
+                  } ],
+                  "objects" : {
+                    "content-more-button" : {
+                      "area" : [ 488, 821, 78, 35 ]
+                    },
+                    "content-desc" : {
+                      "area" : [ 488, 647, 303, 154 ]
+                    },
+                    "content-image" : {
+                      "area" : [ 488, 420, 302, 182 ]
+                    },
+                    "content-header" : {
+                      "area" : [ 488, 612, 303, 35 ]
+                    }
+                  }
+                }
+              } ]
+            }, {
+              "name" : "contents-3",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 27
+                },
+                "name" : "component: contents.spec",
+                "highlight" : [ "contents-3" ],
+                "subLayout" : {
+                  "includedTags" : [ ],
+                  "excludedTags" : [ ],
+                  "sections" : [ {
+                    "name" : "all",
+                    "objects" : [ {
+                      "name" : "content-header",
+                      "specs" : [ {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 12
+                        },
+                        "name" : "below: content-image",
+                        "highlight" : [ "content-header", "content-image" ]
+                      }, {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 13
+                        },
+                        "name" : "above: content-desc",
+                        "highlight" : [ "content-header", "content-desc" ]
+                      } ]
+                    }, {
+                      "name" : "content-desc",
+                      "specs" : [ {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 16
+                        },
+                        "name" : "below: content-header",
+                        "highlight" : [ "content-desc", "content-header" ]
+                      }, {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 17
+                        },
+                        "name" : "above: content-more-button",
+                        "highlight" : [ "content-desc", "content-more-button" ]
+                      } ]
+                    }, {
+                      "name" : "content-more-button",
+                      "specs" : [ {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 20
+                        },
+                        "name" : "below: content-header",
+                        "highlight" : [ "content-more-button", "content-header" ]
+                      }, {
+                        "status" : "info",
+                        "place" : {
+                          "filePath" : "spec/contents.spec",
+                          "lineNumber" : 21
+                        },
+                        "name" : "aligned vertically left:content-desc",
+                        "highlight" : [ "content-more-button", "content-desc" ]
+                      } ]
+                    } ]
+                  } ],
+                  "objects" : {
+                    "content-more-button" : {
+                      "area" : [ 822, 820, 163, 35 ]
+                    },
+                    "content-desc" : {
+                      "area" : [ 822, 646, 303, 154 ]
+                    },
+                    "content-image" : {
+                      "area" : [ 822, 420, 302, 181 ]
+                    },
+                    "content-header" : {
+                      "area" : [ 822, 611, 303, 35 ]
+                    }
+                  }
+                }
+              } ]
+            } ]
+          }, {
+            "name" : "desktop",
+            "objects" : [ {
+              "name" : "right-menu",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 33
+                },
+                "name" : "inside: header 0 px top right",
+                "highlight" : [ "right-menu", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 34
+                },
+                "name" : "right of:left-menu",
+                "highlight" : [ "right-menu", "left-menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 35
+                },
+                "name" : "contains: main-menu-items-*",
+                "highlight" : [ "right-menu", "main-menu-items-1", "main-menu-items-2" ]
+              } ]
+            }, {
+              "name" : "left-menu",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 38
+                },
+                "name" : "inside: header 0 px top left",
+                "highlight" : [ "left-menu", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 39
+                },
+                "name" : "left of:right-menu",
+                "highlight" : [ "left-menu", "right-menu" ]
+              } ]
+            }, {
+              "name" : "navigation-list",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 42
+                },
+                "name" : "absent",
+                "highlight" : [ ]
+              } ]
+            }, {
+              "name" : "backstretch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 45
+                },
+                "name" : "height: ~ 15 % of screen/height",
+                "highlight" : [ "backstretch" ]
+              } ]
+            }, {
+              "name" : "contents-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 49
+                },
+                "name" : "aligned horizontally top:contents-2",
+                "highlight" : [ "contents-1", "contents-2" ]
+              } ]
+            }, {
+              "name" : "contents-2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "spec/responsive.spec",
+                  "lineNumber" : 49
+                },
+                "name" : "aligned horizontally top:contents-3",
+                "highlight" : [ "contents-2", "contents-3" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "screen" : {
+              "area" : [ 0, 0, 1280, 2060 ]
+            },
+            "backstretch" : {
+              "area" : [ 0, 50, 1280, 310 ]
+            },
+            "contents-1" : {
+              "area" : [ 140, 420, 333, 475 ]
+            },
+            "left-menu" : {
+              "area" : [ 0, 0, 824, 50 ]
+            },
+            "contents-2" : {
+              "area" : [ 473, 420, 333, 475 ]
+            },
+            "main-menu-items-1" : {
+              "area" : [ 1085, 0, 91, 50 ]
+            },
+            "right-menu" : {
+              "area" : [ 1085, 0, 195, 50 ]
+            },
+            "main-menu-items-2" : {
+              "area" : [ 1176, 0, 104, 50 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 1280, 50 ]
+            },
+            "contents-3" : {
+              "area" : [ 807, 420, 333, 474 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1429461027515,
+        "type" : "node"
+      } ],
+      "time" : 1429461012257,
+      "type" : "node"
+    } ]
+  }
+};
+        </script>
+        <script>
+
+            $(function () {
+                var galenReport = createGalenReport();
+                galenReport.render("main", reportData);
+            });
+        </script>
+    </head>
+    <body>
+        <script id="report-tpl" type="text/x-handlebars-template">
+            <ul class="report-nodes">
+            {{#each report.nodes}}
+                {{renderNode this}}
+            {{/each}}
+            </ul>
+        </script>
+        <script id="report-node-tpl" type="text/x-handlebars-template">
+            <li>
+                <span class="report-time">{{formatReportTime time}}</span>
+                <a class="expand-link node-expand-button node-status-{{status}} contains-children-{{hasChildElements nodes}} collapsed" href="#">{{status}}</a>
+                <div class="node-name node-status-{{status}}">{{name}}</div>
+                {{#if stacktrace}}
+                    <div class="stacktrace">{{stacktrace}}</div>
+                {{/if}}
+                {{#if attachments}}
+                    <ul class="report-node-attachments">
+                        {{#each attachments}}
+                            <li>
+                                <a class="icon-sprite-before node-attachment" href="{{this}}">{{this}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                {{/if}}
+                <div class="node-details expand-container">
+                    {{#if nodes}}
+                        <ul class="report-nodes">
+                            {{#each nodes}}
+                                {{renderNode this}}
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                </div>
+            </li>
+        </script>
+        <script id="report-node-text-tpl" type="text/x-handlebars-template">
+            <li>
+                <div class="node-simple-text">
+                    {{name}}
+                </div>
+            </li>
+        </script>
+        <script id="report-layout-tpl" type="text/x-handlebars-template">
+            <li>
+                <span class="report-time">{{formatReportTime time}}</span>
+                <a class="expand-link node-expand-button node-status-label node-status-info contains-children-true collapsed" href="#">INFO</a>
+                <div class="node-name">{{name}}</div>
+                <div class="node-details expand-container">
+                    {{renderSublayout this}}
+                </div>
+            </li>
+        </script>
+        <script id="report-layout-sublayout-tpl" type="text/x-handlebars-template">
+            <div class="layout-report" data-layout-id="{{layoutId}}" data-screenshot="{{screenshot}}">
+                <ul class="layout-sections">
+                    {{#each sections}}
+                        {{renderLayoutSection this}}
+                    {{/each}}
+                </ul>
+            </div>
+        </script>
+        <script id="report-layout-section-tpl" type="text/x-handlebars-template">
+            <li>
+                <a class="layout-section icon-sprite-before expand-link contains-children-true" href="#">{{name}}</a>
+                <div class="layout-details expand-container">
+                    {{#if sections}}
+                        <ul class="layout-sections">
+                        {{#each sections}}
+                            {{renderLayoutSection this}}
+                        {{/each}}
+                        </ul>
+                    {{/if}}
+                    {{#if objects}}
+                        <ul class="layout-objects">
+                            {{#each objects}}
+                                {{renderLayoutObject this}}
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                </div>
+            </li>
+        </script>
+        
+        <script id="report-layout-object-tpl" type="text/x-handlebars-template">
+            <li>
+                <a class="layout-object icon-sprite-before expand-link contains-children-true" href="#">{{name}}</a>
+                <ul class="layout-checks expand-container">
+                    {{#each specs}}
+                        {{renderLayoutCheck this}}
+                    {{/each}}
+                    {{#each specGroups}}
+                    <li>
+                        <a class="layout-specgroup icon-sprite-before expand-link contains-children-true" href="#">{{name}}</a>
+                        <ul class="layout-checks expand-container">
+                            {{#each specs}}
+                                {{renderLayoutCheck this}}
+                            {{/each}}
+                        </ul>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+        </script>
+        <script id="report-layout-check-tpl" type="text/x-handlebars-template">
+            <li>
+            <a class="layout-check icon-sprite-before layout-check-status-{{status}}" href="#" 
+                data-highlight-objects="{{commaSeparated highlight}}"
+                title="{{place.filePath}}#{{place.lineNumber}}"
+                >{{name}}</a>
+
+                {{#if errors}}
+                    <div class="layout-check-error-message">
+                        {{#if imageComparison}}
+                        <a class="image-comparison-link" 
+                            data-actual-image="{{imageComparison.actualImage}}"
+                            data-expected-image="{{imageComparison.expectedImage}}"
+                            data-map-image="{{imageComparison.comparisonMapImage}}"
+                            href="#">Show image comparison</a>
+                        {{/if}}
+                        <div class="layout-check-error-message-text">
+                            <ul>
+                            {{#each errors}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                {{/if}}
+
+                {{#if subLayout}}
+                    {{renderSublayout subLayout}}
+                {{/if}}
+            </li>
+        </script>
+        <script id="screenshot-popup-tpl" type="text/x-handlebars-template">
+            <div class="screenshot-canvas">
+                <img src="{{screenshot}}"/>
+                {{#each objects}}
+                <div class="canvas-rect" style="left: {{area.left}}px; top: {{area.top}}px; width: {{area.width}}px; height: {{area.height}}px; border-color: {{color}};">
+                    <div class="canvas-rect-wrapper">
+                        <div class="canvas-rect-hint" style="background: {{color}};">{{@key}}</div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </script>
+        <script id="image-comparison-tpl" type="text/x-handlebars-template">
+            <div class="image-comparison">
+                <h5>Actual</h5>
+                <img src="{{actual}}"/>
+
+                <h5>Expected</h5>
+                <img src="{{expected}}"/>
+
+                <h5>Comparison map</h5>
+                <img src="{{map}}"/>
+            </div>
+        </script>
+
+
+        <div id="menu">
+            <ul>
+                <li><a class="menu-op-expand-all" href="#">Expand All</a></li>
+                <li><a class="menu-op-collapse-all" href="#">Collapse All</a></li>
+                <li><a class="menu-op-expand-errors" href="#">Expand Errors</a></li>
+            </ul>
+        </div>
+        <h2>Homepage in desktop device</h2>
+        <div id="main"></div>
+        <div id="screen-shadow"></div>
+        <div id="popup" class="popup">
+            <div class="popup-wrapper">
+                <a class="popup-close-link" href="#">close</a>
+                <div class="popup-content"></div>
+            </div>
+        </div>
+        <div id="notification" class="notification">
+            <div class="notification-wrapper">
+                <a class="notification-close-link" href="#">close</a>
+                <div class="notification-summary"></div>
+                <div class="notification-message"></div>
+            </div>
+        </div>
+    </body>
+</html>
