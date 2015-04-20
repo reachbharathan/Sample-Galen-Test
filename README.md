@@ -35,14 +35,14 @@ Execute the tests
 To execute the tests provided in this demo.
 
 Pre-requisite
-  Galen Installation(http://galenframework.com/)
+   Galen Installation(http://galenframework.com/)
 
 After installing galen repo,Check out this repo and execute the following command
 
-  galen test tests/responsive.test 
+   galen test tests/responsive.test 
 
 If you want the report of the execution,you can include --report
-  galen test tests/responsive.test --htmlreport reports
+   galen test tests/responsive.test --htmlreport reports
 
 Reports can be found under same directory with name 'reports',after execution
 
