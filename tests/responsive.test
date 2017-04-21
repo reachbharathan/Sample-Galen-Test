@@ -1,3 +1,6 @@
+@@ set
+      reportName = report
+
 @@ Parameterized
     |device |size     |tags|
     |desktop|1600x800 |all,desktop|
@@ -5,5 +8,5 @@
     |mobile |350x568  |all,mobile|
 
 Homepage in ${device} device
-   http://localhost:4000 ${size}
-        check spec/responsive.spec --include "${tags}"
+   http://localhost:4000/feeling-responsive/ ${size}
+        check spec/responsive.gspec --include "${tags}"
